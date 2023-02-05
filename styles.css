@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+/*Title Section*/
+body{
+font-family: 'League Spartan', sans-serif;
+display: grid;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+p{
+margin: 0;
+}
+.attribution {
+font-size: 11px;
+text-align: center;
+}
+.attribution a {
+color: hsl(228, 45%, 44%);
+}
+
+.main-content{
+display: grid;
+margin: auto;
+row-gap: 4.7rem;
+grid-template-columns:  repeat(6, 1fr);
+max-width: 70%;
+}
+
+/*Title Section*/
+.text-container{
+grid-column: span 2;
+}
+.title{
+margin: 0; margin-top: 1rem;
+font-size: 3.3rem;
+font-weight: 700;
+color: hsl(300, 43%, 22%);
+margin-bottom: 1.6rem;
+}
+.details{
+width: 26rem;
+font-size: 1.1rem;
+line-height: 1.5rem;
+color: hsl(303, 10%, 53%);
+}
+
+
+/*Reviews Section*/
+.reviews-list{
+grid-column-start: 4;
+grid-column-end: 6;
+}
+.review-container{
+display: flex;
+width: 110%;
+justify-content: start;
+align-items: center;
+border-radius: 8px;
+height: 60px;
+background-color: hsl(300, 24%, 96%);
+margin-top: 3rem; 
+}
+.review-container:nth-child(1){
+margin-left: 1rem; 
+}
+.review-container:nth-child(2){
+margin-left: 5rem; margin-top: 1rem;
+}
+.review-container:nth-child(3){
+margin-left: 9rem; margin-top: 1rem;
+}
+
+.stars-container{
+margin-right: 30px; margin-left: 25px;
+}
+.star-icon{
+height: 16px; width: 16px;
+margin: 1px;
+}
+.review{
+font-weight: 700;
+font-size: 1.1rem;
+color: hsl(300, 43%, 22%);
+}
+
+/*Comments Section*/
+.comment-container{
+grid-column: span 2;
+display: flex;
+flex-direction: column;
+background-color: hsl(300, 43%, 22%);
+color: white;
+border-radius: 10px;
+padding: 2.5rem 2rem;
+}
+#first-comment{
+margin-right: 20px;
+margin-bottom: 30px;
+}
+#second-comment{
+margin-right: 20px;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+#third-comment{
+margin-top: 30px;
+}
+
+.commenter-info{
+display: flex;
+align-items: center;
+gap: 1rem;
+margin-bottom: 1.5rem;
+}
+.commenter-name{
+margin-bottom: 4px;
+}
+.commenter-info img{
+border-radius: 100%;
+width: 40px; height: 40px;
+}
+#verified-buyer{
+color: hsl(333, 80%, 67%);
+}
+.comment{
+line-height: 1.4rem;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+.main-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: auto;
+}
+.reviews-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+}
+.review-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; height: 65px;
+    row-gap: .4rem;
+    align-items: center;
+    border-radius: 8px;
+    background-color: hsl(300, 24%, 96%);
+    margin-top: 20px;
+    }
+.review-container:nth-child(1){
+    margin: 0;
+}
+.review-container:nth-child(2){
+    margin: 0;
+}
+.review-container:nth-child(3){
+    margin: 0;
+}
+
+#first-comment{
+    margin: 0;
+}
+#second-comment{
+    margin: 0;
+}
+#third-comment{
+    margin: 0;
+    margin-bottom: .5rem;
+}
+.title{
+    text-align: center;
+}
+.details{
+    text-align: center;
+    width: 100%;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: hsl(303, 10%, 53%);
+}
+}
