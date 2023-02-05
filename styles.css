@@ -120,7 +120,7 @@ margin-bottom: 4px;
 border-radius: 100%;
 width: 40px; height: 40px;
 }
-#verified-buyer{
+span{
 color: hsl(333, 80%, 67%);
 }
 .comment{
